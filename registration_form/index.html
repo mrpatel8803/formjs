@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Registraion form</title>
+</head>
+
+<body>
+    <center>
+    <form>
+        <table>
+
+
+            <tr>
+                <h1>RESGISTRATION FORM</h1>
+                <div class="input_group">
+                    <td>
+                        Full name: <input type="text" placeholder="Full Name" id="contact_name" required>
+                        <span id="name_error"></span><br> <br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> E-mail: <input type="email"  placeholder="e-mail" id="e-mail_name"required>
+                        <span id="e-mail_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> phone number: <input type="number"  maxlength="10" placeholder="Contact" id="contact_name"  required>
+                        <span id="contact_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Birthdate: <input type="date" id="date" required>
+                        <span id="birth_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Appointment Time: <input type="time" id="time" required>
+                        <span id="appointment_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Favorite Color:<select name="select color" id="select color" required>
+
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                            <option value="Green">Green</option>
+                            <option value="Pink">Pink</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Wooden">Wooden</option>
+                            <option value="Purple">Purple</option>
+                            <option value="Brown">Brown</option>
+                            <option value="White">white</option>
+                            <span id="color_error"></span>
+                        </select></td><br><br>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Payment Method:
+                        <input type="radio" id="Cash" value="Cash" name="Cash">Cash
+                        <input type="radio" id="Card" value="Card" name="Cash">Card
+                        <input type="radio" id="Upi" value="Upi" name="Cash">Upi
+                        <span id="payment_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Age: 18 TO 56 <input type="range" id="range" required>
+                        <span id="age_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Cheackbox Options: <br><input type="checkbox" id="Cheackbox">Medicine<br>
+                        <input type="checkbox" id="Cheackbox">Syrup<br>
+                        <input type="checkbox" id="Cheackbox">Capsual<br>
+                        <span id="checkbox_error"></span>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> Upload Photo: <input type="file" id="file" required>
+                        <span id="photo_error"></span>
+                        <br><br>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="input_group">
+                    <td> 
+                        <button>Reset</button>
+                        <button onclick="savedata()">Submit</button>
+                        <span id="button_error"></span>
+                    </td>
+                </div>
+            </tr>
+        </table>
+    </form>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>
