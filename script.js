@@ -49,19 +49,19 @@ function validateemail(){
 
 
 function validatephone(){
-    let phone = document.getElementById("contact_name").value;
+    let Phone = document.getElementById("contact_name").value;
 
-    if(phone.length == 0){
+    if(Phone.length == 0){
         phoneError.innerHTML = "Phone no is Required";
         return false;
     }
 
-    if(phone.length !== 10){
+    if(Phone.length !== 10){
         phoneError.innerHTML = "Phone no should be 10 digit";
         return false;
     }
 
-    if(!phone.match(/^[0-9]{10}$/)){
+    if(!Phone.match(/^[0-9]{10}$/)){
         phoneError.innerHTML = "phone no is Required";
         return false;
 
@@ -85,9 +85,9 @@ function validatebirth(){
 }
 
 function validateappointment(){
-    let appointmentTime = document.getElementById("time").value;
+    let AppointmentTime = document.getElementById("time").value;
 
-    if(!appointmentTime.selector){
+    if(!AppointmentTime.selector){
         appointmentError.innerHTML = "Appointment Selection is Required";
         return false;
     }
@@ -97,7 +97,7 @@ function validateappointment(){
 }
 
 function validatecolor(){
-    let color = document.getElementById("select_color").value;
+    let Favouritecolor = document.getElementById("select_Color").value;
 
     if(!Favouritecolor.selector){
         colorError.innerHTML = "Color selection is Required";
@@ -109,7 +109,7 @@ function validatecolor(){
 }
 
 function validatepayment(){
-    let Payment = document.getElementById("payment").value;
+    let Payment = document.getElementById("Payment").value;
 
     if(!Payment.selector){
         paymentError.innerHTML = "Payment selection is Required";
@@ -133,10 +133,10 @@ function validateage(){
     return true;
 }
 
-function validatecheackbox(){
-    let cheackbox = document.getElementById("cheackbox");
+function validateCheackbox(){
+    let Cheackbox = document.getElementById("heackbox");
 
-    if(!cheackbox.selector){
+    if(!Cheackbox.selector){
         cheackboxError.innerHTML = "Cheackbox selection is Required";
         return false;
     }
@@ -145,15 +145,15 @@ function validatecheackbox(){
     return true;
 }
 
-function validatephoto(){
-    let photo = document.getElementById("file");
+function validatePhoto(){
+    let Photo = document.getElementById("file");
 
-    if(!photo.upload){
+    if(!Photo.upload){
         photoError.innerHTML = "Image uplodation is Required";
         return false;
     }
 
-    phoneError.innerHTML = "valid";
+    photeError.innerHTML = "valid";
     return true;
 }
 
